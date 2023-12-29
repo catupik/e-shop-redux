@@ -11,3 +11,127 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cat-cart{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.goodimg {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin-left: 35px;
+}
+.goodAll {
+  display: flex;
+  border-radius: 0.2rem;
+}
+.goodText {
+  text-align: left;
+  margin-bottom: -5px;
+}
+
+.goodInfo, .goodInfoCart{
+  padding: 20px;
+}
+.goodInfoCart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+.btnAddToCart {
+  
+  
+  width: 5.5rem;
+  border-radius: 0.2rem;
+  background-color: #e30613;
+  border: none;
+  color: white;
+  
+}
+
+.btns {
+  display: flex;
+ 
+}
+
+.btn{
+  padding: 0.5rem;
+  margin: 2rem 0.5rem;
+}
+.plusCart {
+  padding: 0.5rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+}
+.minusCart {
+  padding: 0.5rem;
+  margin: 1rem 0.5rem 0rem 0rem;
+}
+
+.plus, .minus, .plusCart, .minusCart {
+  border-radius: 0.2rem;
+  background-color: #e30613;
+  border: none;
+  color: white;
+  width: 1.5rem;
+}
+
+span{
+  font-weight: bold;
+}
+
+.chooseCategory {
+  padding: 0.5rem;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
+  
+  border: none;
+  
+}
+#category-selector {
+  background-color: #e30613; 
+    color: #ffffff;            
+    border: none;  
+    border-radius: 0.2rem;
+    padding: 5px 10px;      
+    font-size: 15px;         
+    cursor: pointer;
+}
+
+#category-selector:focus {
+ 
+  outline: none; }
+
+.backToShop {
+  background-color: #e30613; 
+  color: #ffffff;            
+  border: none;  
+  border-radius: 0.2rem;
+  padding: 0.5rem;      
+  font-size: 15px;         
+  cursor: pointer;
+  width: 10rem;
+  
+}
+.deleteBtn {
+  margin-top: 1rem;
+}
+
+.checkoutBtn {
+  background-color: #e30613; 
+  color: #ffffff;            
+  border: none;  
+  border-radius: 0.2rem;
+  padding: 5px 10px;      
+  font-size: 15px;         
+  cursor: pointer;
+  width: 10rem;
+}
+
+.btn:active {
+  background-color: #b3000f; 
+}

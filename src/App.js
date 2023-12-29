@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cart from "./Components/Cart/Cart";
+import GoodsInCart from "./Components/Cart/GoodsInCart";
+import AllCategories from "./Components/Filter/AllCategories";
+import Goods from "./Components/GoodsComponents/Goods";
+// import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+import { useState } from "react";
 
 function App() {
+
+  const [isCartVisible, setIsCartVisible] = useState(false);
+  
+  const toggleCartVisibility = ()=> {
+    setIsCartVisible(!isCartVisible);
+  }
+
+  
+  
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="cat-cart">
+        {isCartVisible ? 
+        <button onClick={toggleCartVisibility} className="backToShop">Back to E-Shop</button> : <AllCategories />}
+        
+        <Cart toggleCartVisibility={toggleCartVisibility}/>
+      </div>
+
+      {isCartVisible ? <GoodsInCart/> :  <Goods />}
+     
     </div>
   );
 }
