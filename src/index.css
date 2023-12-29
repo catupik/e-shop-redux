@@ -39,7 +39,7 @@ code {
 .goodInfoCart {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   margin-left: 2rem;
 }
 
@@ -132,7 +132,8 @@ span{
   width: 10rem;
 }
 
-.btn:active {
+.btn:active, .backToShop:active, .checkoutBtn:active, .modalBtn:active 
+.plusCart:active, .minusCart:active{
   background-color: #b3000f; 
 }
 
