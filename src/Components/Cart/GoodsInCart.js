@@ -14,7 +14,7 @@ function GoodsInCart() {
 
     return(
         <div>
-            {totalPrice!=0 && <h2>TOTAL: ${totalPrice}</h2>}
+            {totalPrice!== 0 && <h2>TOTAL: ${totalPrice}</h2>}
             { totalPrice === 0 && <p>Your cart is empty</p>}
             { totalPrice !== 0 && <button 
             onClick={handleCheckout} className="checkoutBtn">Checkout</button>}
